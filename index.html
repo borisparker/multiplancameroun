@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MULTIPLAN CAMEROUN</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -163,10 +166,29 @@
             font-weight: 700;
             color: var(--blue-dark);
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         
         .logo span {
             color: var(--gold);
+        }
+        
+        .logo-img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .footer-logo {
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo-img {
+            height: 130px;
+            width: auto;
+            object-fit: contain;
         }
         
         nav ul {
@@ -1872,6 +1894,19 @@
         }
         
         @media (max-width: 768px) {
+            .logo {
+                font-size: 1.2rem;
+                gap: 8px;
+            }
+            
+            .logo-img {
+                height: 35px;
+            }
+            
+            .footer-logo-img {
+                height: 100px;
+            }
+            
             .mobile-menu {
                 display: block;
             }
@@ -2088,7 +2123,10 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <a href="#" class="logo">MULTI<span>PLAN</span> CAMEROUN</a>
+            <a href="#" class="logo">
+                <img src="images/logo sans fond.png" alt="Logo Multiplan Cameroun" class="logo-img">
+                MULTI<span>PLAN</span> CAMEROUN
+            </a>
             <div class="mobile-menu">☰</div>
             <nav>
                 <ul>
@@ -2159,10 +2197,10 @@
                     <div class="about-ceo fade-in">
                         <div class="ceo-card">
                             <div class="ceo-photo">
-                                <img src="images/pdg.jpg" alt="PDG multiplan cameroun" />
+                                <img src="images/pdg sans fond.png" alt="PDG multiplan cameroun" />
                                 <div class="ceo-overlay">
                                     <div class="ceo-info">
-                                        <h4>MBIANDA EPAINETE</h4>
+                                        <h4>SAMUEL KUIBOU</h4>
                                         <p>Président Directeur Général</p>
                                     </div>
                                 </div>
@@ -2172,8 +2210,8 @@
                                     "Notre vision est de connecter les entreprises du monde entier en offrant des solutions logistiques innovantes et fiables. Chaque expédition est une opportunité de renforcer la confiance et de construire l'avenir du commerce international."
                                 </blockquote>
                                 <div class="ceo-signature">
-                                    <span>MBIANDA EPAINETE</span>
-                                    <span>PDG, multiplan cameroun </span>
+                                    <span>Samuel Kuibou</span>
+                                    <span>PDG, multiplan cameroun limited</span>
                                 </div>
                             </div>
                         </div>
@@ -2301,7 +2339,7 @@
                     >
                         <!-- Remplacez cette URL par votre vidéo -->
                         <source src="images/videoo.MP4" type="video/mp4">
-                        <source src="votre-video.webm" type="video/webm">
+                      <!--<source src="votre-video.webm" type="video/webm"> -->
                         Votre navigateur ne supporte pas la lecture vidéo.
                     </video>
                     
@@ -2556,11 +2594,45 @@
             <div class="gallery-grid">
                 <div class="gallery-item fade-in" data-category="equipe">
                     <div class="gallery-image">
-                        <img src="images/un.jpg" alt="Notre équipe" />
+                        <img src="images/pdg sans fond.png" alt="Notre équipe" />
                         <div class="gallery-overlay">
                             <div class="gallery-info">
-                                <h4>Notre équipe</h4>
-                                <p>Professionnels dédiés à votre succès</p>
+                                <h4>Notre équipe <br> Samuel Kuibou</h4>
+                                <p>President Directeur General <br> Professionnels dédiés à votre succès</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-zoom" onclick="openLightbox(this)">
+                                    <span>🔍</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="gallery-item fade-in" data-category="equipe">
+                    <div class="gallery-image">
+                        <img src="images/dggg.jpg" alt="Notre équipe" />
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Notre équipe <br> Nana Fabo Robert</h4>
+                                <p>DIrecteur Genral <br>Professionnels dédiés à votre succès</p>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-zoom" onclick="openLightbox(this)">
+                                    <span>🔍</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                  <div class="gallery-item fade-in" data-category="equipe">
+                    <div class="gallery-image">
+                        <img src="images/df sans fond.png" alt="Notre équipe" />
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Notre équipe <br> Mbianda Epainete</h4>
+                                <p> Directeur Financier <br>Professionnels dédiés à votre succès</p>
                             </div>
                             <div class="gallery-actions">
                                 <button class="gallery-zoom" onclick="openLightbox(this)">
@@ -2607,7 +2679,7 @@
                 
                 <div class="gallery-item fade-in" data-category="evenements">
                     <div class="gallery-image">
-                        <img src="images/deux.jpg" alt="Événement client" />
+                        <img src="images/ev.png" alt="Événement client" />
                         <div class="gallery-overlay">
                             <div class="gallery-info">
                                 <h4>Événement client</h4>
@@ -2656,7 +2728,7 @@
                     </div>
                 </div>
                 
-                <div class="gallery-item fade-in" data-category="equipe">
+                <div class="gallery-item fade-in" data-category="transport">
                     <div class="gallery-image">
                         <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Formation équipe" />
                         <div class="gallery-overlay">
@@ -2778,8 +2850,8 @@
                             </div>
                             <div class="card-content">
                             <h4>Téléphone</h4>
-                            <p>+237 675 43 69 21</p>
-                                <a href="tel:+237675436921" class="contact-link">Appeler</a>
+                            <p>+237 675 52 60 67</p>
+                                <a href="tel:+237675526067" class="contact-link">Appeler</a>
                         </div>
                     </div>
                         
@@ -2789,8 +2861,8 @@
                             </div>
                             <div class="card-content">
                             <h4>Email</h4>
-                            <p>multiplan@gmail.com</p>
-                                <a href="mailto:contact@globaltradeconnect.com" class="contact-link">Écrire</a>
+                            <p>samuelkuibou@multiplancameroun.com</p>
+                                <a href="mailto:samuelkuibou@multiplancameroun.com" class="contact-link">Écrire</a>
                         </div>
                     </div>
                         
@@ -2809,7 +2881,7 @@
                     <div class="social-section">
                         <h4>Suivez-nous</h4>
                         <div class="social-links">
-                            <a href="#" class="social-link">
+                            <a href="https://www.linkedin.com/in/samuel-kuibou-745166390/" class="social-link">
                                 <span class="social-icon">in</span>
                                 <span class="social-text">LinkedIn</span>
                             </a>
@@ -2833,10 +2905,13 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo sans fond.png" alt="Logo Multiplan Cameroun" class="footer-logo-img">
+                    </div>
                     <h3>Multiplan cameroun</h3>
                     <p>Votre partenaire de confiance pour le commerce international depuis 2022.</p>
                     <div class="social-links">
-                        <a href="#">in</a>
+                        <a href="https://www.linkedin.com/in/samuel-kuibou-745166390/">in</a>
                         <a href="#">f</a>
                         <a href="#">ig</a>
                     </div>
@@ -2863,8 +2938,8 @@
                 <div class="footer-column">
                     <h3>Contact</h3>
                     <ul>
-                        <li>📞 +237 675 43 69 21</li>
-                        <li>✉️ multiplan@gmail.com</li>
+                        <li>📞 +237 675 52 60 67</li>
+                        <li>✉️ samuelkuibou@multiplancameroun.com</li>
                         <li>📍douala cameroun</li>
                     </ul>
                 </div>
